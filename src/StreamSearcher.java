@@ -35,8 +35,6 @@ public class StreamSearcher {
 		boxed().
 		collect(Collectors.groupingBy(foo -> foo.intValue(),Collectors.counting()));
 		
-		
-		//counterMap.forEach((i,count) -> System.out.println(i+" key is "+count + " times"));
 		return counterMap;
 	}
 
