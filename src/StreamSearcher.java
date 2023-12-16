@@ -9,9 +9,9 @@ public class StreamSearcher {
 	 * Search the array and find count of how many times each item exists in the array
 	 * */
 	public static Map<Integer, Integer> searchArray(int[] intArr){
-		Integer[] what = Arrays.stream( intArr ).boxed().toArray( Integer[]::new );
+		Integer[] integerArr = Arrays.stream( intArr ).boxed().toArray( Integer[]::new );
 		Map<Integer, Integer> counterMap = new HashMap<Integer,Integer>();
-		for (Integer item : what) {
+		for (Integer item : integerArr) {
 			int counter = 1;
 			if(Objects.nonNull(counterMap.get(item))) {
 				counter = counterMap.get(item);
